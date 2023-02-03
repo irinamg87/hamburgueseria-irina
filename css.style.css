@@ -1,0 +1,170 @@
+@import url(reset.css);
+@import url('https://fonts.googleapis.com/css2?family=Handlee&family=Montserrat:wght@400;700&display=swap');
+
+
+
+/*
+  font-family: 'Handlee', cursive;
+  font-family: 'Montserrat', sans-serif;
+  color-principal: #fa573a
+  color-azul: #21242e;
+  */
+
+html {
+
+    /*para generar animaciones de puntos de ancla*/
+
+    scroll-behavior: smooth;
+}
+
+:root {
+    --fuenteprincipal: 'Montserrat', sans-serif;
+    --fuentetitulos: 'Handlee', cursive;
+    --colorprincipal: #fa573a;
+    --colorsecundario: #21242e;
+    --margingrid: 1em;
+    --font-size: 1em;
+    --anchomaximo: 1100px;
+
+}
+
+* {
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.container {
+    max-width: var(--anchomaximo);
+    margin: 0 auto;
+}
+
+body {
+    font-family: var(--fuenteprincipal);
+    font-size: var(--fontsize);
+}
+
+/*inicio header*/
+
+header .nav-top {
+    background-color: var(--colorsecundario);
+    padding: 1.250em 0;
+
+}
+
+header .nav-top .container {
+    display: flex;
+    justify-content: space-around;
+}
+
+header .nav-top a {
+    text-decoration: none;
+    color: var(--colorprincipal)
+}
+
+header nav-top a i {
+    font-size: 150%;
+}
+
+header .nav-top span {
+    color: white;
+    display: none;
+}
+
+header nav {
+    padding: 1.250em;
+}
+
+header .hamburguesa {
+    width: 1.875em;
+    cursor: pointer;
+
+}
+
+header .hamburguesa div {
+    border-top: 2px solid #aaa;
+    margin-bottom: 0.625em;
+}
+
+header nav .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+header nav .menu {
+    padding-top: 1.25em;
+    width: 100%;
+}
+
+header .logo {
+    max-width: 100px;
+}
+
+header .menu a {
+    display: block;
+    text-align: center;
+    padding: 1.25em;
+    text-decoration: none;
+    color: #aaa;
+    border-bottom: 1px solid #aaa;
+    transition: 0.5s;
+
+}
+
+header .menu a:hover {
+    color: var(--colorprincipal)
+}
+
+header .menu li:last-child a {
+    border-bottom: 0px;
+}
+
+header .menu .activo {
+    color: var(--colorprincipal);
+}
+
+
+
+/*final header*/
+
+/* mediaqueries */
+
+@media (min-width: 48.000em) {
+    header .nav-top span {
+
+        display: inline;
+        font-size: 110%;
+    }
+
+    header .nav-top .container {
+        justify-content: space-between;
+    }
+
+    /*Queda pendiente ajustar los márgenes del nav-top*/
+}
+
+@media (min-width: 62.750em) {
+
+    header .hamburguesa {
+        display: none;
+    }
+
+    header nav .menu {
+        width: auto;
+        padding-top: 0%;
+    }
+
+    header nav .menu li {
+        display: inline-block;
+    }
+
+    header .menu a {
+        border-bottom: 0px;
+        padding: 0.5em 0 0.5em 1.25em;
+    }
+}
