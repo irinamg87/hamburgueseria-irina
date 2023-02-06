@@ -164,6 +164,78 @@ footer a:hover {
 
 /*final footer*/
 
+/*inicio hero*/
+
+.hero {
+    background-image: url(assets/material-2/images/fondo.jpg);
+    background-color: #777;
+    background-blend-mode: multiply;
+    background-position: center center;
+    background-size: cover;
+    color: white;
+    height: 60vh;
+    display: flex;
+
+}
+
+.hero .container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 90%;
+
+}
+
+.hero h1 {
+    font-family: var(--fuentetitulos);
+    font-size: 2.25em;
+}
+
+.hero h2 {
+    color: var(--colorprincipal);
+    font-size: 1.25em;
+    margin: var(--margingrid) 0;
+
+}
+
+.hero p {
+    font-size: 1.15em;
+}
+
+.boton {
+    display: inline-block;
+    background-color: var(--colorprincipal);
+    padding: 1.15em;
+    color: white;
+    text-decoration: none;
+    border: 1px solid var(--colorprincipal);
+    margin: var(--margingrid) 0;
+}
+
+.boton:hover {
+    background-color: transparent;
+    color: var(--colorprincipal);
+}
+
+.boton:hover i {
+    transition: transform 0.5s;
+    transform: translateX(5px) scale(1.15);
+}
+
+.hero .social {
+    display: flex;
+    width: 160px;
+    justify-content: space-between;
+}
+
+.hero .social a {
+    color: white;
+    font-size: 2em;
+}
+
+/* final hero*/
+
 /* mediaqueries */
 
 @media (min-width: 48.000em) {
