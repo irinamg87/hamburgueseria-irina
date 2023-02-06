@@ -231,13 +231,125 @@ footer a:hover {
 
 .hero .social a {
     color: white;
-    font-size: 2em;
+    font-size: 2em 1.5em;
 }
 
 /* final hero*/
 
-/* mediaqueries */
+main section {
 
+    padding: 2.188em;
+}
+
+main section h2 {
+    color: black;
+    font-family: var(--fuentetitulos);
+    font-size: 2em;
+    text-align: center;
+}
+
+main section h2 span {
+    color: var(--colorprincipal);
+}
+
+main section .underline {
+    position: relative;
+    width: 6.250em;
+    margin: 0 auto;
+    color: var(--colorprincipal);
+    font-weight: 700;
+    margin-bottom: var(--margingrid);
+}
+
+main section .underline hr {
+    border-color: var(--colorprincipal);
+    position: absolute;
+    width: 100%;
+    top: -1px;
+}
+
+main section .underline span {
+
+    text-align: center;
+    display: block;
+
+}
+
+main section:last-child {
+    padding-bottom: 90px;
+}
+
+/* inicio ourservices*/
+
+
+main #ourservices .grid {
+    display: grid;
+    grid-column: 1fr;
+    gap: var(--margingrid);
+
+}
+
+main #ourservices article {
+    border-bottom: 1px solid #aaa;
+    padding: 1.5em 0;
+}
+
+main #ourservices article i:not(.fa-long-arrow-alt-right) {
+    color: var(--colorprincipal);
+    font-size: 140%;
+    border: 1px solid var(--colorprincipal);
+    display: inline-block;
+    padding: 0.5 em;
+
+}
+
+main #ourservices h3 {
+    font-weight: 700;
+    margin: 10px;
+    font-size: 110%;
+}
+
+main #ourservices p {
+    color: #777;
+    line-height: 1.25em;
+    margin-bottom: 0.5em;
+}
+
+.enlace {
+    text-decoration: none;
+    color: var(--colorprincipal);
+    font-weight: 700;
+}
+
+.fa-truck {
+    transform: rotateY(180deg);
+}
+
+
+
+/*final ourservices*/
+
+/* mediaqueries */
+/*600px*/
+@media (min-width: 37.500em) {
+    main #ourservices .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    main #ourservices article:last-child {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+    main #ourservices article {
+        border-bottom: 0px;
+        border-left: 1px solid #aaa;
+        padding: 1.5em;
+    }
+
+}
+
+/*768px*/
 @media (min-width: 48.000em) {
     header .nav-top span {
 
@@ -252,6 +364,15 @@ footer a:hover {
     footer {
         text-align: left;
     }
+
+    main #ourservices .grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    main #ourservices article:last-child {
+        grid-column: 3/4;
+    }
+
 
     /*Queda pendiente ajustar los márgenes del nav-top*/
 }
@@ -275,4 +396,6 @@ footer a:hover {
         border-bottom: 0px;
         padding: 0.5em 0 0.5em 1.25em;
     }
+
+
 }
