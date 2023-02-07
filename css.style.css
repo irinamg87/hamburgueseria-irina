@@ -372,6 +372,40 @@ main #aboutus figure:hover :is(.marco, img) {
 
 /* final about us*/
 
+/* inicio our blogs */
+
+
+main #ourblogs .flex {
+    display: flex;
+    flex-direction: column;
+    gap: var(--margingrid);
+}
+
+main #ourblogs h3 {
+    font-weight: 700;
+    font-size: 110%;
+}
+
+main #ourblogs h4 {
+    margin: 1em 0;
+    color: var(--colorprincipal);
+}
+
+main #ourblogs p {
+    color: #777;
+    line-height: 1.25em;
+}
+
+.boton_2 {
+    display: inline-block;
+    padding: 1.15em;
+    color: var(--colorprincipal);
+    text-decoration: none;
+    margin: var(--margingrid) 0;
+}
+
+/* final our blogs */
+
 /* mediaqueries */
 /*600px*/
 @media (min-width: 37.500em) {
@@ -420,6 +454,11 @@ main #aboutus figure:hover :is(.marco, img) {
 
     main #ourservices article:last-child {
         grid-column: 3/4;
+    }
+
+    main #ourblogs .grid {
+        grid-template-columns: repeat(3, 1fr);
+        width: 33.333%;
     }
 
 
