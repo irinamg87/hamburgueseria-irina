@@ -375,10 +375,14 @@ main #aboutus figure:hover :is(.marco, img) {
 /* inicio our blogs */
 
 
-main #ourblogs .flex {
+main #ourblogs .grid {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     gap: var(--margingrid);
+}
+
+main #ourblogs article {
+    width: calc(50% - var(--margingrid));
 }
 
 main #ourblogs h3 {
@@ -405,6 +409,16 @@ main #ourblogs p {
 }
 
 /* final our blogs */
+
+/* inicio menu */
+
+#main_menu {
+    background-color: var(--colorsecundario);
+    width: 100vw;
+    height: 100vh;
+}
+
+/* final menu */
 
 /* mediaqueries */
 /*600px*/
@@ -456,9 +470,8 @@ main #ourblogs p {
         grid-column: 3/4;
     }
 
-    main #ourblogs .grid {
-        grid-template-columns: repeat(3, 1fr);
-        width: 33.333%;
+    main #ourblogs article {
+        width: calc(33.333% - var(--margingrid));
     }
 
 
