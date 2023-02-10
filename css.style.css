@@ -408,6 +408,37 @@ main #ourblogs p {
     margin: var(--margingrid) 0;
 }
 
+main #ourblog .calendario {
+    font-weight: 700;
+    line-height: 1.25em;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+}
+
+.calendario {
+    color: white;
+}
+
+main #ourblog .flex {
+    display: flex;
+    flex-wrap: wrap;
+    gap: tar(--margingrid);
+}
+
+
+main #ourblog article {
+    width: calc(50%-var(--margingrid));
+}
+
+.flex div.calendario {
+    background-color: var(--colorprincipal);
+    background-blend-mode: lighten;
+}
+
 /* final our blogs */
 
 /* inicio menu */
@@ -416,6 +447,32 @@ main #ourblogs p {
     background-color: var(--colorsecundario);
     width: 100vw;
     height: 100vh;
+}
+
+main section #titulo {
+    color: white;
+    font-size: 2em 1.5em;
+}
+
+.side {
+    flex: 30%;
+    background-color: var(--colorsecundario);
+    padding-left: 2vw;
+}
+
+main section .menu a {
+    display: block;
+    padding: 1.25em;
+    text-decoration: none;
+    color: #fbf8f8;
+
+}
+
+main section .menu a:hover {
+    width: 75vw;
+    background-color: #fa573a;
+    border-radius: 20px;
+    transition: 1s;
 }
 
 /* final menu */
@@ -442,6 +499,19 @@ main #ourblogs p {
 
         flex-direction: row;
 
+    }
+
+    /*Today's Menu*/
+    main section .side .menu a:hover {
+        width: 75vw;
+        background-color: #fa573a;
+        border-radius: 20px;
+        transition: 1s;
+    }
+
+
+    main section .side {
+        padding-left: 15vw;
     }
 
 }
@@ -473,7 +543,6 @@ main #ourblogs p {
     main #ourblogs article {
         width: calc(33.333% - var(--margingrid));
     }
-
 
     /*Queda pendiente ajustar los márgenes del nav-top*/
 }
