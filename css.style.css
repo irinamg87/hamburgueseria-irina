@@ -441,42 +441,6 @@ main #ourblog article {
 
 /* final our blogs */
 
-/* inicio menu */
-
-#main_menu {
-    background-color: var(--colorsecundario);
-    width: 100vw;
-    height: 100vh;
-}
-
-main section #titulo {
-    color: white;
-    font-size: 2em 1.5em;
-}
-
-.side {
-    flex: 30%;
-    background-color: var(--colorsecundario);
-    padding-left: 2vw;
-}
-
-main section .menu a {
-    display: block;
-    padding: 1.25em;
-    text-decoration: none;
-    color: #fbf8f8;
-
-}
-
-main section .menu a:hover {
-    width: 75vw;
-    background-color: #fa573a;
-    border-radius: 20px;
-    transition: 1s;
-}
-
-/* final menu */
-
 /* mediaqueries */
 /*600px*/
 @media (min-width: 37.500em) {
@@ -499,19 +463,6 @@ main section .menu a:hover {
 
         flex-direction: row;
 
-    }
-
-    /*Today's Menu*/
-    main section .side .menu a:hover {
-        width: 75vw;
-        background-color: #fa573a;
-        border-radius: 20px;
-        transition: 1s;
-    }
-
-
-    main section .side {
-        padding-left: 15vw;
     }
 
 }
