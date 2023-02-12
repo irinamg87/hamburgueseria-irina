@@ -397,7 +397,7 @@ main #ourblogs h4 {
 
 main #ourblogs p {
     color: #777;
-    line-height: 1.25em;
+    line-height: 1.8em;
 }
 
 .boton_2 {
@@ -408,29 +408,33 @@ main #ourblogs p {
     margin: var(--margingrid) 0;
 }
 
-main #ourblog .calendario {
+main #ourblogs .calendario {
     font-weight: 700;
     line-height: 1.25em;
     width: 50px;
     height: 50px;
-    position: absolute;
-    top: 0;
-    left: 0;
-
-}
-
-.calendario {
+    position: relative;
     color: white;
 }
 
-main #ourblog .flex {
+.calendario {
+    position: absolute;
+    top: 50px;
+    left: 0px;
+    text-align: center;
+    opacity: 0.8;
+    background-color: #fa573a;
+    font-size: larger;
+}
+
+main #ourblogs .flex {
     display: flex;
     flex-wrap: wrap;
     gap: tar(--margingrid);
 }
 
 
-main #ourblog article {
+main #ourblogs article {
     width: calc(50%-var(--margingrid));
 }
 
